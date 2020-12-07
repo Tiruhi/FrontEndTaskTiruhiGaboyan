@@ -1,0 +1,35 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+@mixin flexbox() {
+  display: flex;
+  font-size: 0;
+}
+
+@mixin flexend() {
+  align-items: flex-end;
+}
+
+@mixin tr($x, $y, $z) {
+  transform: translate3d($x, $y, $z);
+}
+@mixin line($color, $top, $right, $bottom, $left) {
+  content: "";
+  width: 75px;
+  height: 0;
+  border: 3px solid $color;
+  background-color: $color;
+  position: absolute;
+  left: $left;
+  right: $right;
+  top: $top;
+  bottom: $bottom;
+}

@@ -1,0 +1,241 @@
+@media only screen and (max-width: 1300px) {
+  footer section.newsletter {
+    padding-left: 170px;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .content section.devices {
+    //flex-direction: column;
+    //justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px 70px;
+
+    .phone-group {
+      margin-top: 50px;
+      zoom: .7;
+    }
+  }
+
+  footer section.newsletter {
+    padding-left: 60px;
+  }
+
+  footer section.newsletter form.newsletter-form button {
+    margin-left: 60px;
+  }
+
+  footer .footer-bottom .bottom-logo img {
+    width: 70%;
+  }
+  footer .footer-bottom .bottom-navbar a {
+    font-size: 20px;
+  }
+
+
+  element.style {
+  }
+  footer .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+
+  .content section.expertise .expertise-col {
+    &:nth-child(1) {
+      width: 30%;
+    }
+
+    &:nth-child(2) {
+      width: 70%;
+    }
+  }
+
+  footer section.newsletter form.newsletter-form button {
+    margin-left: 30px;
+  }
+
+  footer .footer-bottom .bottom-navbar {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 993px) {
+
+  .content section.devices {
+    flex-direction: column;
+    padding: 100px 30px;
+
+    .devices-col:nth-child(1) {
+      width: 90%;
+    }
+  }
+  footer section.newsletter form.newsletter-form button {
+    margin-left: 0;
+    width: 69%;
+  }
+  footer section.newsletter form.newsletter-form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer section.newsletter form.newsletter-form input {
+    margin-bottom: 30px;
+    margin-right: 0;
+    width: 69%;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .header-row {
+    .header-col {
+
+      &:nth-child(1) {
+        width: 20%;
+      }
+
+      &:nth-child(2) {
+        width: 80%;
+      }
+    }
+  }
+
+  .content section.devices .devices-col {
+    &:nth-child(2) {
+      width: 100%;
+    }
+  }
+
+  .content section.expertise .expertise-col .expertise-title {
+    padding-top: 65px;
+  }
+  .content section.expertise .expertise-col .expertise-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .content section.expertise .expertise-col .expertise-text:nth-child(2) {
+    padding-bottom: 48px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .devices-quotes, .devices-title {
+    flex-wrap: wrap;
+  }
+  .phone-group .phone-2 {
+    left: 59px;
+  }
+  .content section.expertise .expertise-col {
+    &:nth-child(1) {
+      width: 0%;
+    }
+
+    &:nth-child(2) {
+      width: 100%;
+    }
+  }
+
+  .content section.section .section-content .section-item .product {
+
+    padding: 30px 10px;
+
+    .product-text {
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+  .content section.section.partners .partners-content {
+    flex-direction: column;
+
+    .partner-item {
+      margin-bottom: 30px;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  .header-row {
+    .header-col {
+
+      &:nth-child(1) {
+        width: 0%;
+      }
+
+      &:nth-child(2) {
+        width: 100%;
+      }
+    }
+  }
+  .content section.section .section-content .section-item .product .product-img img {
+    width: 60%;
+    margin: auto;
+  }
+
+  .content section.section .section-content .section-item .product .product-title {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: -60px;
+    font-weight: 600;
+  }
+  .content section.section .section-content .section-item .product .product-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .content section.devices .phone-group {
+    margin: auto;
+    margin-top: 50px;
+    zoom: .5;
+  }
+  footer .footer-bottom {
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .footer-bottom .bottom-navbar {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer-bottom .bottom-navbar a:nth-child(1), footer .footer-bottom .bottom-navbar a:nth-child(2) {
+    margin-right: 0;
+  }
+
+  footer .footer-bottom .bottom-ancors {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+      margin-top: 10px;
+      &.cc {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 333px) {
+  .header-row {
+    .header-col {
+      &:nth-child(2) {
+
+        .header-link {
+          padding: 7px 45px;
+        }
+      }
+    }
+  }
+}
