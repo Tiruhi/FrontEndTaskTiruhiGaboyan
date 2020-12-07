@@ -1,0 +1,44 @@
+@import "mixins";
+@import "fonts";
+
+$minwidth: 320px;
+$fontfamily: "WorkSans";
+
+@import "nullable";
+
+@import "ui";
+@import "nav";
+@import "header";
+//@import "owlcarousel/owl.carousel";
+
+.wrapper {
+  //overflow: hidden;
+  //min-height: 100%;
+  display: flex;
+
+
+  .flex-2 {
+    flex: 2 2 auto;
+    align-self: auto;
+    order: 0;
+
+    //width: 20%;
+
+  }
+  .flex-9 {
+    flex: 9 9 auto;
+    align-self: auto;
+    order: 0;
+
+    //width: 80%;
+  }
+
+  //position: relative;
+}
+
+@import "content";
+@import "paginate/paginate";
+@import "footer";
+@import "scrollbar";
+
+@import "medias";

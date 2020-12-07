@@ -1,0 +1,56 @@
+.header {
+  background: linear-gradient(91.39deg, #4568DC -2.02%, #00B4DB 118.83%);
+  //height: 300px;
+
+  .header-fixed {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .active-page {
+      font-family: $fontfamily;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      text-transform: capitalize;
+
+      color: #FFFFFF;
+
+      display: flex;
+      align-items: center;
+
+      &:before {
+        content: url(../img/green-line.png);
+        width: 5px;
+        height: 48px;
+        vertical-align: middle;
+        display: flex;
+        margin-right: 8px;
+        flex-flow: wrap;
+      }
+
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 45px;
+      .topbar-item {
+        margin-left: 50px;
+        &:first-child {
+          margin-right: 0;
+        }
+
+        .topbar-item-link {
+
+          i {
+            font-size: 26px;
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}

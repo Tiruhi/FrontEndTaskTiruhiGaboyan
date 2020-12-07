@@ -1,0 +1,341 @@
+/* start home styles*/
+
+.home {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  position: relative;
+
+  .home-wrap {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, 50%);
+    left: 50%;
+
+    .home-heading {
+      font-family: $fontfamily;
+      font-style: normal;
+      line-height: 59px;
+
+      color: #575A63;
+      margin: auto;
+      text-align: center;
+
+      h2 {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 59px;
+
+        color: #575A63;
+        padding-bottom: 12px;
+      }
+
+      h1 {
+
+        font-weight: 600;
+        font-size: 50px;
+        border-bottom: 4px solid #1976D2;
+        padding-bottom: 28px;
+      }
+    }
+
+    .site-brand {
+      margin-top: 50px;
+
+      .site-brand-logo {
+        width: 581.32px;
+        height: 136.42px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+  }
+
+}
+
+/* end home styles*/
+
+/* start documents styles*/
+
+.documents {
+  padding: 20px 16px 40px 28px;
+
+  .documents-filters {
+    @include bg_br(#EFF4FF, 5px);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 28px;
+
+    .filters {
+      display: flex;
+
+      .filter-item {
+        margin-right: 20px;
+
+        &.custom-select {
+          @include bg_br(#ffffff, 15px);
+
+          font-family: $fontfamily;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+
+          color: #6D6D6D;
+        }
+
+        &.search {
+          display: flex;
+
+          input {
+            display: none;
+            box-shadow: 0 0 6px rgba(39, 174, 222, 0.25);
+            @include bg_br(#ffffff, 15px);
+            border: none;
+          }
+
+          @include bg_br(#37A0EA, 15px);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+          color: #FFFFFF;
+
+          button {
+            border: none;
+            @include bg_br(#37A0EA, 15px);
+
+            color: #fff;
+            padding: 11px 13px;
+            outline: none;
+          }
+        }
+
+      }
+    }
+
+    .opload-btn {
+      @include bg_br(#37A0EA, 15px);
+      padding: 8px 24px;
+
+      a {
+
+        font-family: "IBMPlexSans", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 19px;
+
+        color: rgba(255, 255, 255, 0.9);
+      }
+    }
+  }
+
+
+  /* start documents-content styles */
+  .documents-table-block {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+
+    margin-top: 20px;
+    /* start pagination styles */
+
+
+    .pagination-block {
+      background: #37A0EA;
+      border-radius: 5px 5px 0px 0px;
+      padding: 15px 20px;
+
+
+      display: flex;
+      justify-content: space-between;
+
+      hgroup {
+        &.pagination-title {
+          font-family: $fontfamily;
+          font-style: normal;
+          display: flex;
+          align-items: center;
+
+          h2 {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            text-transform: capitalize;
+
+            color: #FFFFFF;
+
+            i {
+              margin-right: 15px;
+            }
+
+            padding-right: 10px;
+            border-right: 1px solid #fff;
+          }
+
+          span {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+
+            text-transform: capitalize;
+
+            color: rgba(255, 255, 255, 0.8);
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .pagination-items {
+
+      }
+
+    }
+
+    /* end pagination styles */
+
+    /* start documents table  styles */
+    .documents-table {
+      table {
+        width: 100%;
+        font-family: $fontfamily;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 19px;
+        border-collapse: collapse;
+        thead {
+          tr{
+
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 0px;
+            height: 52px;
+
+            th {
+
+              font-weight: 600;
+
+              text-transform: capitalize;
+
+              color: #575A63;
+
+              //border-left: 1px solid #EAEDF6;
+              position: relative;
+
+              &:before {
+                @include line(#EAEDF6, 50%, 0, 0, 0);
+                width: 33px;
+                border-width: .5px;
+                //@include tr()
+              transform: rotate(90deg);
+              }
+
+              &:nth-child(1) {
+                &:before {
+                  @include line(#fff, 50%, 0, 0, 0);
+                  width: 33px;
+                  border-width: .5px;
+                  transform: rotate(90deg);
+                }
+              }
+
+            }
+          }
+
+        }
+
+        tbody {
+          tr{
+            border-bottom: 1px solid #EAEDF6;
+            height: 52px;
+
+            td {
+              font-weight: 400;
+
+              color: #575A63;
+            }
+          }
+
+        }
+      }
+    }
+
+    /* end documents table  styles */
+
+  }
+
+  /* end documents-content styles */
+
+}
+
+
+/*start select styles */
+
+.custom-select {
+  position: relative;
+  width: 250px;
+  box-shadow: 0px 0px 6px rgba(39, 174, 222, 0.25);
+  border-radius: 15px;
+}
+
+.custom-select select {
+  display: none;
+}
+
+.select-selected {
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #575A63 transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #575A63 transparent;
+  top: 7px;
+}
+
+.select-items div, .select-selected {
+  color: #6D6D6D;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-selected {
+  &.select-arrow-active {
+    border-radius: 15px 15px 0 0;
+  }
+}
+
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*end select styles */
+
+/* end documents styles*/
