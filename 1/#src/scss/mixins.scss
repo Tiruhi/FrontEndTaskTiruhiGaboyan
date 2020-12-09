@@ -14,10 +14,6 @@
   font-size: 0;
 }
 
-@mixin flexend() {
-  align-items: flex-end;
-}
-
 @mixin tr($x, $y, $z) {
   transform: translate3d($x, $y, $z);
 }

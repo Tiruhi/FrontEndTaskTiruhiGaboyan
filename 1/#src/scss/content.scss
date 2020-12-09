@@ -17,7 +17,6 @@
         flex-direction: column;
 
         &:nth-child(1) {
-          //max-width: 758px;
           width: 50%;
         }
 
@@ -129,7 +128,6 @@
           font-weight: 400;
           font-size: 22px;
           line-height: 26px;
-          //text-align: justify;
 
           color: #FFFFFF;
           max-width: 700px;
@@ -167,6 +165,7 @@
       }
     }
 
+    /*products & partners block*/
     &.section {
       display: flex;
       flex-direction: column;
@@ -265,7 +264,6 @@
       }
 
     }
-
   }
 }
 
@@ -310,7 +308,6 @@
 
       &:nth-child(1) {
         width: 20px;
-        //height: 15px;
 
         top: 60px;
         left: 153px;
@@ -319,14 +316,12 @@
 
       &:nth-child(2) {
         width: 191.29px;
-        //height: 60.86px;
         top: 103px;
         left: 173px;
       }
 
       &:nth-child(3) {
         width: 241px;
-        //height: 416px;
         top: 175px;
         left: 145px;
       }

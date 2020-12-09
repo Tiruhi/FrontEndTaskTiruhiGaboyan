@@ -30,10 +30,9 @@ footer {
         &.newsletter-form {
           display: flex;
           flex-wrap: wrap;
-          font-family: "WorkSans";
+          font-family: $fontfamily;
           font-style: normal;
           padding-bottom: 75px;
-
 
           input {
             background: #FFFFFF;
@@ -64,13 +63,9 @@ footer {
             text-align: center;
             border-radius: 3px;
             margin-left: 90px;
-
-
           }
         }
       }
-
-
     }
 
   }
