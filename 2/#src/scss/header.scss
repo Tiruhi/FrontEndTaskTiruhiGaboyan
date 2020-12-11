@@ -29,6 +29,7 @@
         display: flex;
         margin-right: 8px;
         flex-flow: wrap;
+        margin-left: 18px;
       }
 
     }
@@ -37,8 +38,10 @@
       display: flex;
       justify-content: space-between;
       margin-right: 45px;
+
       .topbar-item {
         margin-left: 50px;
+
         &:first-child {
           margin-right: 0;
         }
@@ -48,6 +51,31 @@
           i {
             font-size: 26px;
             color: #FFFFFF;
+          }
+
+          &.notifications {
+            position: relative;
+            &:after {
+              content: "";
+              position: absolute;
+              top: -10px;
+              right: -5px;
+              width: 5px;
+              height: 5px;
+              background: #f68383;
+              border-radius: 50%;
+            }
+
+          }
+        }
+
+        &:hover {
+          .topbar-item-link {
+
+            i {
+              color: darken(#fff, 10%);
+              transition: color .5s;
+            }
           }
         }
       }

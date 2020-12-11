@@ -18,122 +18,270 @@
     @@include('_nav.html')
 
 
-    <div class="flex-9">
-        <!-- include header -->
+    <!--    <div class="flex-9">-->
+    <!-- include header -->
 
-        @@include('_header.html')
+    @@include('_header.html')
 
-        <div class="page-content documents">
+    <div class="page-content documents">
 
-            <div class="documents-filters">
+        <div class="documents-filters">
 
-                <div class="filters">
-                    <div class="filter-item custom-select">
+            <div class="filters">
+                <div class="filter-item custom-select">
 
-                        <select class="doc-cat " name="state">
-                            <option>Category</option>
-                            <option>Show All</option>
-                            <option>Financial</option>
-                            <option>Technology</option>
-                            <option>Healthcare</option>
-                        </select>
-                    </div>
-
-                    <div class="filter-item custom-select">
-
-                        <select class="doc-cat custom-select" name="state1">
-                            <option>Filter</option>
-                            <option>Show All</option>
-                            <option>Tipe</option>
-                            <option>Date</option>
-                            <option>Status</option>
-                        </select>
-                    </div>
-
-                    <form action="" class="filter-item search">
-                        <input type="text" placeholder="Search..." name="search" id="search-input">
-                        <button type="button" class="search-btn" id="search-btn"><i class="fa fa-search"></i></button>
-                    </form>
+                    <select class="doc-cat " name="state">
+                        <option>Category</option>
+                        <option>Show All</option>
+                        <option>Financial</option>
+                        <option>Technology</option>
+                        <option>Healthcare</option>
+                    </select>
                 </div>
 
-                <div class="opload-btn">
-                    <a href="#">Upload document</a>
+                <div class="filter-item custom-select">
+
+                    <select class="doc-cat custom-select" name="state1">
+                        <option>Filter</option>
+                        <option>Show All</option>
+                        <option>Tipe</option>
+                        <option>Date</option>
+                        <option>Status</option>
+                    </select>
                 </div>
+
+                <form action="" class="filter-item search">
+                    <input type="text" placeholder="Search..." name="search" id="search-input">
+                    <button type="button" class="search-btn" id="search-btn"><i class="fa fa-search"></i></button>
+                </form>
             </div>
 
-            <div class="documents-table-block">
-                <div class="pagination-block">
-                    <hgroup class="pagination-title">
-                        <h2>
-                            <i class="fas fa-folder-open"></i>
-                            Documents
-                        </h2>
-                        <span>
-                            12 items
-                        </span>
-                    </hgroup>
-
-                    <div class="pagination-items">
-
-                    </div>
-                </div>
-                <div class="documents-table">
-                    <table class="table table-dark docTable">
-                        <thead>
-                        <tr>
-                            <th scope="col">Document list</th>
-                            <th scope="col">Tipe</th>
-                            <th scope="col">Date</th>
-                            <th scope="col">Status</th>
-                            <th scope="col">Actions</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td scope="row">Interview</td>
-                            <td scope="row">
-                                <img src="img/icons/icon-pdf.png" alt="">
-                                <span>PDF</span>
-                            </td>
-                            <td scope="row">09.12.2020</td>
-                            <td scope="row">Active</td>
-                            <td scope="row">
-                                <a href="#">
-                                    <i class="fas fa-ellipsis-v"></i>
-                                </a>
-                            </td>
-
-                        </tr>
-
-                        <tr>
-                            <td scope="row">Interview</td>
-                            <td scope="row">
-                                <img src="img/icons/icon-pdf.png" alt="">
-                                <span>PDF</span>
-                            </td>
-                            <td scope="row">09.12.2020</td>
-                            <td scope="row">Active</td>
-                            <td scope="row">
-                                <a href="#">
-                                    <i class="fas fa-ellipsis-v"></i>
-                                </a>
-                            </td>
-
-                        </tr>
-
-
-                        </tbody>
-                    </table>
-                </div>
-
+            <div class="opload-btn">
+                <a href="#">Upload document</a>
             </div>
         </div>
 
+        <div class="documents-table-block">
+            <div class="pagination-block">
+                <hgroup class="pagination-title">
+                    <h2>
+                        <i class="fas fa-folder-open"></i>
+                        Document List
+                    </h2>
+                    <span>
+                            12 items
+                        </span>
+                </hgroup>
+
+                <div class="pagination-items">
+                    <!--https://codepen.io/eksch/pen/jPPPPp-->
+                </div>
+            </div>
+            <div class="documents-table">
+
+                <table class="docTable table hover ">
+                    <thead>
+                    <tr>
+                        <th scope="col" class="doc-name">Document Name</th>
+                        <th scope="col" class="doc-tipe">Tipe</th>
+                        <th scope="col" class="doc-date">Date</th>
+                        <th scope="col" class="doc-status">Status</th>
+                        <th scope="col" class="doc-actions">Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td scope="row">Interview</td>
+                        <td scope="row">
+                            <img src="img/icons/icon-pdf.png" alt="">
+                            <span>PDF</span>
+                        </td>
+                        <td scope="row">09.12.2020</td>
+                        <td scope="row">Active</td>
+                        <td scope="row" class="actions-td">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row">Interview</td>
+                        <td scope="row">
+                            <img src="img/icons/icon-word.png" alt="">
+                            <span>Word</span>
+                        </td>
+                        <td scope="row">09.12.2020</td>
+                        <td scope="row">Active</td>
+                        <td scope="row" class="actions-td">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row">Interview</td>
+                        <td scope="row">
+                            <img src="img/icons/icon-pdf.png" alt="">
+                            <span>PDF</span>
+                        </td>
+                        <td scope="row">09.12.2020</td>
+                        <td scope="row">Active</td>
+                        <td scope="row" class="actions-td">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row">Interview</td>
+                        <td scope="row">
+                            <img src="img/icons/icon-word.png" alt="">
+                            <span>Word</span>
+                        </td>
+                        <td scope="row">09.12.2020</td>
+                        <td scope="row">Active</td>
+                        <td scope="row" class="actions-td">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row">Interview</td>
+                        <td scope="row">
+                            <img src="img/icons/icon-word.png" alt="">
+                            <span>Word</span>
+                        </td>
+                        <td scope="row">09.12.2020</td>
+                        <td scope="row">Active</td>
+                        <td scope="row" class="actions-td">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row">Interview</td>
+                        <td scope="row">
+                            <img src="img/icons/icon-pdf.png" alt="">
+                            <span>PDF</span>
+                        </td>
+                        <td scope="row">09.12.2020</td>
+                        <td scope="row">Active</td>
+                        <td scope="row" class="actions-td">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row">Interview</td>
+                        <td scope="row">
+                            <img src="img/icons/icon-word.png" alt="">
+                            <span>Word</span>
+                        </td>
+                        <td scope="row">09.12.2020</td>
+                        <td scope="row">Active</td>
+                        <td scope="row" class="actions-td">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row">Interview</td>
+                        <td scope="row">
+                            <img src="img/icons/icon-pdf.png" alt="">
+                            <span>PDF</span>
+                        </td>
+                        <td scope="row">09.12.2020</td>
+                        <td scope="row">Active</td>
+                        <td scope="row" class="actions-td">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row">Interview</td>
+                        <td scope="row">
+                            <img src="img/icons/icon-exel.png" alt="">
+                            <span>XLSX</span>
+                        </td>
+                        <td scope="row">09.12.2020</td>
+                        <td scope="row">Active</td>
+                        <td scope="row" class="actions-td">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row">Interview</td>
+                        <td scope="row">
+                            <img src="img/icons/icon-exel.png" alt="">
+                            <span>XLSX</span>
+                        </td>
+                        <td scope="row">09.12.2020</td>
+                        <td scope="row">Active</td>
+                        <td scope="row" class="actions-td">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row">Interview</td>
+                        <td scope="row">
+                            <img src="img/icons/icon-exel.png" alt="">
+                            <span>XLSX</span>
+                        </td>
+                        <td scope="row">09.12.2020</td>
+                        <td scope="row">Active</td>
+                        <td scope="row" class="actions-td">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row">Interview</td>
+                        <td scope="row">
+                            <img src="img/icons/icon-exel.png" alt="">
+                            <span>XLSX</span>
+                        </td>
+                        <td scope="row">09.12.2020</td>
+                        <td scope="row">Active</td>
+                        <td scope="row" class="actions-td">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </a>
+                        </td>
+
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
     </div>
 
-</div>
+    <!--    </div>-->
 
+</div>
 <script src="js/jquery-3.5.1.min.js"></script>
+
 
 <script src="js/script.min.js"></script>
 

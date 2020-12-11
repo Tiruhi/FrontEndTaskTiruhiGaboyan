@@ -205,8 +205,31 @@
         font-size: 16px;
         line-height: 19px;
         border-collapse: collapse;
+
+        tr {
+          &.doc-name {
+            width: 25%;
+          }
+
+          &.doc-tipe {
+            width: 25%;
+          }
+
+          &.doc-date {
+            width: 25%;
+          }
+
+          &.doc-status {
+            width: 15%;
+          }
+
+          &.doc-actions {
+            width: 10%;
+          }
+        }
+
         thead {
-          tr{
+          tr {
 
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
             border-radius: 0px;
@@ -215,38 +238,54 @@
             th {
 
               font-weight: 600;
-
               text-transform: capitalize;
-
               color: #575A63;
-
-              //border-left: 1px solid #EAEDF6;
               position: relative;
+              text-align: start;
+              padding-left: 20px;
 
               &:before {
-                @include line(#EAEDF6, 50%, 0, 0, 0);
-                width: 33px;
-                border-width: .5px;
-                //@include tr()
-              transform: rotate(90deg);
+                content: "";
+                height: 33px;
+                border: .5px solid #eaedf6;
+                background-color: #eaedf6;
+                top: 50%;
+                bottom: 0;
+                width: 0;
+                text-align: start;
+                margin-right: 16px;
               }
 
-              &:nth-child(1) {
+              &.doc-name {
+                width: 25%;
+
                 &:before {
-                  @include line(#fff, 50%, 0, 0, 0);
-                  width: 33px;
-                  border-width: .5px;
-                  transform: rotate(90deg);
+                  display: none;
                 }
               }
 
+              &.doc-tipe {
+                width: 25%;
+              }
+
+              &.doc-date {
+                width: 25%;
+              }
+
+              &.doc-status {
+                width: 15%;
+              }
+
+              &.doc-actions {
+                width: 10%;
+              }
             }
           }
 
         }
 
         tbody {
-          tr{
+          tr {
             border-bottom: 1px solid #EAEDF6;
             height: 52px;
 
@@ -254,6 +293,12 @@
               font-weight: 400;
 
               color: #575A63;
+              padding-left: 36px;
+
+              &.actions-td {
+                text-align: center;
+                padding-left: 0;
+              }
             }
           }
 
@@ -275,7 +320,7 @@
 .custom-select {
   position: relative;
   width: 250px;
-  box-shadow: 0px 0px 6px rgba(39, 174, 222, 0.25);
+  box-shadow: 0 0 6px rgba(39, 174, 222, 0.25);
   border-radius: 15px;
 }
 

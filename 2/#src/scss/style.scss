@@ -11,10 +11,22 @@ $fontfamily: "WorkSans";
 @import "header";
 //@import "owlcarousel/owl.carousel";
 
+
+.header { grid-area: header; }
+.nav { grid-area: nav; }
+.page-content { grid-area: main; }
+
+
 .wrapper {
-  //overflow: hidden;
-  //min-height: 100%;
-  display: flex;
+  //display: flex;
+  display: grid;
+
+  grid-template-areas:
+          'nav header header header header'
+          'nav main main main main';
+
+  grid-template-rows: 100px auto;
+  grid-template-columns:  20% 80%;
 
 
   .flex-2 {
@@ -37,7 +49,6 @@ $fontfamily: "WorkSans";
 }
 
 @import "content";
-@import "paginate/paginate";
 @import "footer";
 @import "scrollbar";
 
